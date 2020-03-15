@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="methods" name="my monster tet chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.myTest.LoginTest">
+        <methods>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.myTest.LoginTest -->
+    </classes>
+  </test> <!-- my monster tet chrome(failed) -->
+  <test parallel="methods" name="Monster(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.myTest.LoginTest">
+        <methods>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.myTest.LoginTest -->
+    </classes>
+  </test> <!-- Monster(failed) -->
+</suite> <!-- Failed suite [Suite] -->
